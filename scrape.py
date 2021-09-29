@@ -33,7 +33,7 @@ for game in platforms_div:
     temp = game.xpath('.//span[contains(@class, "platform_img")]')
     platforms = [t.get('class').split(' ')[-1] for t in temp]
     if 'hmd_separator' in platforms:
-        platforms.remote('hdm_separator')
+        platforms.remove('hdm_separator')
     total_platforms.append(platforms)
 
 
