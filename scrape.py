@@ -49,5 +49,5 @@ for info in zip(titles, prices, tags, total_platforms):
     output.append(resp)
 
 # Save as a .json file.
-with open('scarped_steam_games.json', 'w', encoding='utf-8') as f:
+with open('scraped_steam_games.json', 'w', encoding='utf-8') as f:
     json.dump(output, f, ensure_ascii=False, indent=4)
